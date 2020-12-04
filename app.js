@@ -42,4 +42,4 @@ httpProxy.createProxyServer({
   }
 }).listen(process.env.PORT || 8888);
 
-util.puts('http proxy server' + ' started ' + 'on port ' + process.env.PORT);
+console.log('http proxy server' + ' started ' + 'on port ' + process.env.PORT);
