@@ -29,7 +29,6 @@ var https = require('https'),
     util  = require('util'),
     path  = require('path'),
     fs    = require('fs'),
-    colors = require('colors'),
     httpProxy = require('./lib/http-proxy');
 
 //
@@ -43,4 +42,4 @@ httpProxy.createProxyServer({
   }
 }).listen(process.env.PORT || 8888);
 
-util.puts('http proxy server'.blue + ' started '.green.bold + 'on port '.blue + '8011'.yellow);
+util.puts('http proxy server' + ' started ' + 'on port ' + process.env.PORT);
