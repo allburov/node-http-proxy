@@ -36,7 +36,7 @@ var https = require('https'),
 //
 httpProxy.createProxyServer({
   target: 'http://52.53.179.109:8000',
-  agent  : https.globalAgent,
+  agent  : http.globalAgent,
   headers: {
     host: '52.53.179.109'
   }
